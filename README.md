@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="/logo.png" alt="logo" width="200" height="auto" />
+  <img src="/public/logo.png" alt="logo" width="200" height="auto" />
 
   <h1>Full Stack Movie Application with NEXT.JS 13!</h1>
 
