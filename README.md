@@ -12,9 +12,9 @@ Full Stack Movie Application with NEXT.JS 13!(Next.js 13, mongodb, node js, Next
 
 <a href="https://jj-movie-night.vercel.app/" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
-![](https://img.shields.io/github/forks/https:/jeffjiang13/movie-night.svg)
-![](https://img.shields.io/github/stars/https:/jeffjiang13/movie-night.svg)
-![](https://img.shields.io/github/issues/https:/jeffjiang13/movie-night)
+![](https://img.shields.io/github/forks/jeffjiang13/movie-night.svg)
+![](https://img.shields.io/github/stars/jeffjiang13/movie-night.svg)
+![](https://img.shields.io/github/issues/jeffjiang13/movie-night)
 ![](https://img.shields.io/github/last-commit/jeffjiang13/movie-night)
 
 <h4>
