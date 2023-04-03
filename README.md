@@ -99,17 +99,6 @@ Full Stack Movie Application with NEXT.JS 13!(Next.js 13, mongodb, node js, Next
     </tr>
 </table>
 
-## :toolbox: Getting Started
-
-### :bangbang: Prerequisites
-
-- Sign up for a The Movie Database (TMDB) account <a href='https://www.themoviedb.org'>HERE</a>
-- Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
-- Create Account mongoDB <a href='https://www.mongodb.com/'>HERE</a>
-- Create Account Railway <a href='https://railway.app/'>HERE</a>
-- Get Lookup APi Key <a href='https://extreme-ip-lookup.com/'>HERE</a>
-- Pusher JS <a href='https://pusher.com/'>HERE</a>
-
 
 ### :gear: Installation
 
