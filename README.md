@@ -10,7 +10,7 @@ Full Stack Movie Application with NEXT.JS 13!(Next.js 13, mongodb, node js, Next
 
 <!-- Badges -->
 
-<a href="" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
+<a href="https://jj-movie-night.vercel.app/" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
 ![](https://img.shields.io/github/forks/SashenJayathilaka/Full-Stack-Movie-Application.svg)
 ![](https://img.shields.io/github/stars/SashenJayathilaka/Full-Stack-Movie-Application.svg)
@@ -18,7 +18,7 @@ Full Stack Movie Application with NEXT.JS 13!(Next.js 13, mongodb, node js, Next
 ![](https://img.shields.io/github/last-commit/SashenJayathilaka/Full-Stack-Movie-Application)
 
 <h4>
-    <a href="">View Demo</a>
+    <a href="https://jj-movie-night.vercel.app/">View Demo</a>
 </h4>
 </div>
 
@@ -45,7 +45,7 @@ Full Stack Movie Application with NEXT.JS 13!(Next.js 13, mongodb, node js, Next
 
 
 
-## <a href="" target="_blank">LIVE DEMO 💥</a>
+## <a href="https://jj-movie-night.vercel.app/" target="_blank">LIVE DEMO 💥</a>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
