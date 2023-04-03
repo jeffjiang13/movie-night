@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://w7.pngwing.com/pngs/466/197/png-transparent-movie-camera-film-director-old-camera-illustration-retro-photography-camera-icon.png" alt="logo" width="200" height="auto" />
+  <img src="/logo.png" alt="logo" width="200" height="auto" />
 
   <h1>Full Stack Movie Application with NEXT.JS 13!</h1>
 
