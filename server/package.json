@@ -7,9 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "next build"
   },
-  "author": "sashen",
+  "author": "jeff",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
