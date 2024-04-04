@@ -43,12 +43,14 @@ function MoviesLine({ movie }: Props) {
         ease: [0, 0.71, 0.2, 1.01],
       }}
       onClick={() => navigatePage()}
-      className="relative h-28 min-w-[180px] cursor-pointer transition-transform duration-200 ease-out md:h-[300px] md:min-w-[200px] md:hover:scale-105"
+      className="relative cursor-pointer transition-transform duration-200 ease-out md:h-[300px] h-[350px] md:min-w-[200px] min-w-[180px] md:hover:scale-105"
     >
       {movie.backdrop_path || movie.poster_path ? (
         <div
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
+          className="h-full w-full" // This ensures the div takes the full height of its parent.
+
         >
           <Image
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

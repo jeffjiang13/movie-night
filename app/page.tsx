@@ -91,29 +91,52 @@ export default function Home() {
               title="Trending Now"
               isMain={true}
             />
-            <Row movies={movie.topRated} title="Top Rated" isMain={true} />
-            <div className="pb-14">
-              <Row
-                movies={movie.actionMovies}
-                title="Action Thrillers"
-                isMain={true}
+            <br />
+
+            <Row
+              movies={movie.topRated}
+              title="Top Rated"
+              isMain={true}
+            />
+            <br />
+            <Row
+              movies={movie.actionMovies}
+              title="Action Thrillers"
+              isMain={true}
+            />
+            <div className="hidden md:block">
+              <DividerMovieLine
+                netflixOriginals={movie.netflixOriginals}
+                horrorMovies={movie.horrorMovies}
               />
             </div>
-            <DividerMovieLine
-              netflixOriginals={movie.netflixOriginals}
-              horrorMovies={movie.horrorMovies}
+            <br />
+            <br />
+
+            <Row
+              movies={movie.comedyMovies}
+              title="Comedies"
+              isMain={true}
             />
-            <Row movies={movie.comedyMovies} title="Comedies" isMain={true} />
+            <br />
+            <br />
+
             <Row
               movies={movie.horrorMovies}
               title="Scary Movies"
               isMain={true}
             />
+            <br />
+            <br />
+
             <Row
               movies={movie.romanceMovies}
               title="Romance Movies"
               isMain={true}
             />
+            <br />
+            <br />
+
             <Row
               movies={movie.documentaries}
               title="Documentaries"

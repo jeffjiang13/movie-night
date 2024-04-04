@@ -180,6 +180,7 @@ function SearchComponent({}: Props) {
                 className="md:h-[300px] md:min-w-[200px] object-cover"
                 src={`${baseURL}${data.poster_path || data.profile_path}`}
                 loading="lazy"
+                alt="img"
               />
               {isHover && (
                 <>

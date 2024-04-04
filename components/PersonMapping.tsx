@@ -44,7 +44,7 @@ function PersonMapping({ person }: Props) {
       >
         <img
           src={`${baseURL}${person.profile_path}`}
-          alt=""
+          alt="img"
           className="w-56 m-auto"
         />
         {isHover && (
