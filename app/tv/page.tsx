@@ -63,37 +63,56 @@ function TvSession({}: Props) {
         <main className="relative pl-4 pb-24 lg:space-y-24">
           <HomeBanner netflixOriginals={movie.topRated} />
           <section className="md:space-y-24 pt-20">
+          <br />
+          <br />
+
             <Row
               movies={movie.topRated.slice(0, 10)}
               title="Trending Now"
               isMain={true}
             />
+          <br />
+          <br />
+
             <Row
               movies={movie.topRated.slice(10, movie.topRated.length)}
               title="Top Rated"
               isMain={true}
             />
-            <div className="pb-14">
+            <br />
+            <br />
+
               <Row
                 movies={movie.popularTv.slice(0, 10)}
                 title="Action Thrillers"
                 isMain={true}
               />
-            </div>
+            <div className="hidden md:block">
+
             <DividerMovieLine
               netflixOriginals={movie.popularTv}
               horrorMovies={movie.topRated}
             />
+            </div>
+            <br />
+            <br />
+
             <Row
               movies={movie.onTheAirTv.slice(0, 10)}
               title="Comedies"
               isMain={true}
             />
+            <br />
+            <br />
+
             <Row
               movies={movie.onTheAirTv.slice(10, movie.onTheAirTv.length)}
               title="Scary Movies"
               isMain={true}
             />
+            <br />
+            <br />
+
             <Row
               movies={movie.popularTv.slice(0, movie.popularTv.length)}
               title="Romance Movies"

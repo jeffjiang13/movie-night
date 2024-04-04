@@ -15,86 +15,45 @@ function Seasons({ movieDetails }: Props) {
   const router = useRouter();
   const { data: session } = useSession();
 
-  const navigatePage = (sessionId: number, sessionNumber: number) => {
+  const navigatePage = (sessionId: number, seasonNumber: number) => {
     if (session) {
-      router.push(`/season/${sessionId}?sessionNumber=${sessionNumber}`);
+      router.push(`/season/${sessionId}?seasonNumber=${seasonNumber}`);
     } else {
-      toast.error(
-        "You Need to Sign In to Look Up More Information About This Session"
-      );
+      toast.error("You need to sign in to look up more information about this season.");
     }
   };
 
   return (
     <div className="px-4 pb-8">
       <Container header="Seasons">
-        <div className="flex items-center scrollbar-hide space-x-0.5 overflow-x-scroll md:space-x-2.5 md:p-2 overflow-y-hidden">
-          {movieDetails?.seasons?.map((season) => (
+        <div className="flex space-x-4 overflow-x-scroll scrollbar-hide py-2">
+          {movieDetails?.seasons?.map((season, index) => (
             <motion.div
+              key={season.id || index} // Fallback to index if id is not available
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-              key={season.id}
-              className="relative h-28 min-w-[180px] cursor-pointer transition-transform duration-200 ease-out md:h-[400px] md:min-w-[200px] items-center hover:shadow-2xl"
-              onClick={() =>
-                navigatePage(movieDetails.id, season.season_number)
-              }
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="shrink-0 relative cursor-pointer w-[180px] md:w-[200px] h-[250px] md:h-[300px] hover:scale-105"
+              onClick={() => navigatePage(movieDetails.id, season.season_number)}
             >
-              <p
-                className={`text-lg py-2.5 text-gray-400 ${
-                  !season.poster_path && "animate-pulse"
-                }`}
-              >
-                {season.name}
-              </p>
               {season.poster_path ? (
                 <img
                   src={`${baseURL}${season.poster_path}`}
                   alt={season.name}
-                  className="rounded-sm object-cover md:rounded w-[180px]"
+                  className="rounded-lg object-cover w-full h-full"
                 />
               ) : (
                 <img
                   src="https://i0.wp.com/authormarystone.com/wp-content/uploads/2019/01/comingsoon.jpg?resize=576%2C864"
-                  alt="img/no"
-                  className="rounded-sm object-cover md:rounded w-[180px] animate-pulse"
+                  alt="Coming soon"
+                  className="rounded-lg object-cover w-full h-full"
                 />
               )}
-
-              <p
-                className={`text-sm font-medium text-gray-400 text-start ${
-                  !season.poster_path && "animate-pulse"
-                }`}
-              >
-                Season Number:{" "}
-                <span className="text-white">
-                  {season.season_number ? season.season_number : "Not Yet"}
-                </span>
-              </p>
-              <p
-                className={`text-sm font-medium text-gray-400 text-start ${
-                  !season.poster_path && "animate-pulse"
-                }`}
-              >
-                Episode Count:{" "}
-                <span className="text-white">
-                  {season.episode_count ? season.episode_count : "Not Yet"}
-                </span>
-              </p>
-              <p
-                className={`text-sm font-medium text-gray-400 text-start ${
-                  !season.poster_path && "animate-pulse"
-                }`}
-              >
-                Air Date:{" "}
-                <span className="text-white">
-                  {season.air_date ? season.air_date : "Not Yet"}
-                </span>
-              </p>
+              <div className="absolute bottom-0 left-0 w-full text-center bg-gradient-to-t from-black to-transparent py-2">
+                <p className="text-xs text-white truncate">{season.name}</p>
+                <p className="text-xs text-gray-400">Season: {season.season_number}</p>
+                <p className="text-xs text-gray-400">Episodes: {season.episode_count}</p>
+              </div>
             </motion.div>
           ))}
         </div>

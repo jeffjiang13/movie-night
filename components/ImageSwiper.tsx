@@ -56,8 +56,11 @@ function ImageSwiper({ movieImage }: Props) {
               </div>
             </motion.div>
           </SwiperSlide>
+
         ))}
       </Swiper>
+      <br />
+
     </>
   );
 }

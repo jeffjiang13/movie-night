@@ -153,11 +153,17 @@ function DetailsPage({}: Props) {
           <Seasons movieDetails={movieDetails.movieDetails as Details} />
         )}
         <MovieReview movieReview={movieDetails.review} />
+        <br />
+        <br />
+
         <Row
           movies={movieDetails.similar}
           title="YOU MAY ALSO LIKE"
           isMain={false}
         />
+        <br />
+        <br />
+
       </main>
       <Footer />
     </motion.div>

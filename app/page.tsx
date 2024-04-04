@@ -86,11 +86,15 @@ export default function Home() {
         <main className="relative pl-4 pb-24 lg:space-y-24">
           <HomeBanner netflixOriginals={movie.netflixOriginals} />
           <section className="md:space-y-24 pt-20">
+          <br />
+          <br />
+
             <Row
               movies={movie.trendingNow}
               title="Trending Now"
               isMain={true}
             />
+            <br />
             <br />
 
             <Row

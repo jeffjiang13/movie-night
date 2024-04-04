@@ -24,7 +24,7 @@ function GlobalLoading({ isLoading }: Props) {
         <Navbar />
         <br />
         <Toolbar />
-        <LinearProgress />
+        <LinearProgress color="warning" />
         <Box
           sx={{
             position: "absolute",
