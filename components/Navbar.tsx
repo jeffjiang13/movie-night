@@ -30,13 +30,13 @@ function Navbar() {
   return (
     <header className={`header ${isScrolled ? "bg-[#141414]" : ""} hover:bg-[#141414] flex justify-between items-center px-5 py-3`}>
       <p className="font-bold text-3xl text-white">
-        Movie<span className="text-yellow-500">NIGHT</span>
+        <a href="/" >Movie<span className="text-yellow-500">NIGHT</span> </a>
       </p>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
         <button onClick={toggleMenu}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </button>
